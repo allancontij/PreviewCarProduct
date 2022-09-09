@@ -1,0 +1,148 @@
+/* General Settings
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-size: 15px;
+}
+
+section {
+    display: inline-block;
+    margin-top: 250px;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 28px;
+    color : hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-right: 60px;
+    margin-left: 50px;
+    margin-top: 35px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color : hsl(0, 0%, 95%);
+    margin-left: 50px;
+    margin-top: 60px;
+    padding: 10px 25px;
+    border-radius: 1rem;
+}
+
+img {
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+/* Content
+*/
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sedans {
+    width: 320px;
+    height: 410px;
+    margin-right: -4px;
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+}
+
+.btn-sedans {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-sedans:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.suvs {
+    width: 320px;
+    height: 410px;
+    margin-right: -4px;
+    background: hsl(184, 100%, 22%);
+}
+
+.btn-suvs {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-suvs:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.luxury {
+    width: 320px;
+    height: 410px;
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
+.btn-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-luxury:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+/* Mobile Settings
+*/
+@media(max-width: 950px) {
+    section {
+        display: block;
+    }
+
+    .container section {
+        margin-top: 20px;
+        margin-right: 50%;
+        margin-left: auto;
+
+    }
+
+    .sedans {
+        margin-bottom: -20px;
+        border-radius: 0.625rem 0.625rem 0 0;
+    }
+
+    .suvs {
+        margin-bottom: -20px;
+    }
+
+    .luxury {
+        border-radius: 0 0 0.625rem 0.625rem ;
+        margin-bottom: 20px;
+    }
+}
